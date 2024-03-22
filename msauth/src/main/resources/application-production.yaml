@@ -1,0 +1,20 @@
+server:
+  port: 0
+  error:
+    include-stacktrace: ON_PARAM
+spring:
+  application:
+    name: msauth
+  datasource:
+    url: jdbc:mysql://localhost:3306/chickenhouse?useSSL=false&createDatabaseIfNotExist=true
+    username: root
+    password: leonan2knet
+  jpa:
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
