@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  db:
+    image: mysql
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: leonan2knet
+    ports:
+      - 3306:3306
+    volumes:
+      - C:\\dev\\docker\\java\\chickenhouse_auth:/var/lib/mysql
+volumes:
+  chickenhouse_auth:

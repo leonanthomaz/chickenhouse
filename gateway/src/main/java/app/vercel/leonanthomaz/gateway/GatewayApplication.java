@@ -17,12 +17,7 @@ public class GatewayApplication {
 	public RouteLocator routes(RouteLocatorBuilder builder){
 		return builder
 				.routes()
-				.route(r -> r.path("/products/**").uri("lb://msproduct"))
-				.route(r -> r.path("/orders/**").uri("lb://msorder"))
 				.route(r -> r.path("/auth/**").uri("lb://msauth"))
-				.route(r -> r.path("/cart/**").uri("lb://mscart"))
-				.route(r -> r.path("/delivery/**").uri("lb://msdelivery"))
-				.route(r -> r.path("/payment/**").uri("lb://mspayment"))
 				.build();
 	}
 

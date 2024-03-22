@@ -14,7 +14,7 @@
 	<name>chickenhouse</name>
 	<description>Aplicação principal do app Chicken House</description>
 
-	<packaging>pom</packaging> <!-- Alteração feita aqui -->
+	<packaging>pom</packaging>
 
 	<properties>
 		<java.version>17</java.version>
@@ -24,6 +24,7 @@
 	<modules>
 		<module>eureka</module>
 		<module>gateway</module>
+		<module>msauth</module>
 	</modules>
 
 	<dependencies>
